@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Transition from "@/components/common/Transition";
+import Avatar from '@mui/material/Avatar';
 
 function UserMenu() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -39,8 +40,8 @@ function UserMenu() {
         onClick={() => setDropdownOpen(!dropdownOpen)}
         aria-expanded={dropdownOpen}
       >
-        {/* <Avatar src={'https://picsum.photos/200/300'} size="40" round={true}/> */}
-        User
+       
+        <Avatar alt="User img" src={'https://picsum.photos/200/300'}  sx={{ width: 32, height: 32 }} />
       </button>
 
       <Transition

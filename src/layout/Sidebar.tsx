@@ -2,6 +2,8 @@ import { useState, useEffect, useRef, FC } from "react";
 import { FiLogOut } from "react-icons/fi";
 import { AiOutlineDoubleLeft } from "react-icons/ai";
 import SidebarNav from "@/components/sidebar/SidebarNav";
+import app_logo from '@/assets/logo/app_logo.svg'
+import app_title from '@/assets/logo/app_logo_title.svg'
 interface SidebarProps {
   sidebarOpen: boolean;
   setSidebarOpen: (val: boolean) => void;
@@ -73,19 +75,18 @@ const Sidebar: FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
         <div className="block text-white mt-3">
           <img
             className=" mx-auto h-24"
-            src={"logo/app_logo.svg"}
+            src={app_logo}
             alt="app logo"
           />
-
           <img                
             className=" mx-auto h-4"
-            src={"logo/app_logo_title.svg"}
-            alt="app logo title"
+            src={app_title }
+            alt="app title"
           />
         </div>
       </div>
 
-      <div className="flex flex-col justify-between  h-full mt-16">
+      <div className="flex flex-col justify-between  h-full mt-12">
         <div
           className={`overflow-hidden  overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-600 `}
           style={{ height: "600px" }}
