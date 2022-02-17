@@ -1,18 +1,17 @@
 import { useState, FC } from "react";
 import { NavLink } from "react-router-dom";
 import { MdCloudUpload } from "react-icons/md";
-import { useAppDispatch } from "../store/hooks";
-import { setSeletedPage } from "../store/global/globalReducer";
+import { useAppDispatch } from "@/store/hooks";
+import { setSeletedPage } from "@/store/global/globalReducer";
 import {
   RiSettings2Fill,
-  RiShieldUserFill,
+  RiDatabase2Fill,
   RiFileList3Fill,
 } from "react-icons/ri";
 
 import {
   HiViewGrid,
   HiUserGroup,
-  HiBell, 
   HiShieldExclamation,
   HiOutlineChevronRight
 } from "react-icons/hi";
@@ -27,46 +26,46 @@ const SidebarNav= () => {
     },
     {
       id: 2,
-      text: "Simple Screen",
-      path: "simple-screen",
-      icon: <HiBell />,
+      text: "OTC",
+      path: "otc/list",
+      icon: <RiDatabase2Fill />,
     },
     {
       id: 3,
       text: "Clients",
-      path: "clients",
+      path: "client/list",
       icon: <HiUserGroup />,
     },
     {
       id: 4,
       text: "User Management",
-      path: "user-management",
+      path: "user-management/list",
       icon: <RiSettings2Fill />,
     },
     {
       id: 5,
       text: "Bulk Upload",
-      path: "bulk-upload",
+      path: "bulk-upload/list",
       icon: <MdCloudUpload />,
     },
     {
       id: 6,
       text: "Open Alerts",
-      path: "open-alerts",
+      path: "open-alert/list",
       icon: <HiShieldExclamation />,
     },
     {
       id: 7,
       text: "History",
-      path: "history",
+      path: "history/list",
       icon: <RiFileList3Fill />,
     },
-    {
-      id: 8,
-      text: "Admin",
-      path: "admin",
-      icon: <RiShieldUserFill />,
-    },
+    // {
+    //   id: 8,
+    //   text: "Admin",
+    //   path: "admin",
+    //   icon: <RiShieldUserFill />,
+    // },
     // {
     //   id: 1,
     //   text: "Dashboard",

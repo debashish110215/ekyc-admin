@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, FC } from "react";
 import { FiLogOut } from "react-icons/fi";
 import { AiOutlineDoubleLeft } from "react-icons/ai";
-import SidebarNav from "../components/SidebarNav";
+import SidebarNav from "@/components/sidebar/SidebarNav";
 interface SidebarProps {
   sidebarOpen: boolean;
   setSidebarOpen: (val: boolean) => void;
@@ -77,19 +77,15 @@ const Sidebar: FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
             alt="app logo"
           />
 
-          <img
+          <img                
             className=" mx-auto h-4"
             src={"logo/app_logo_title.svg"}
             alt="app logo title"
           />
-          <p className=" text-gray-100 text-center mt-5">
-            <span className="block text-sm">Welcome To</span>
-            <span className="block text-sm"> Wave Money Admin Portal</span>
-          </p>
         </div>
       </div>
 
-      <div className="flex flex-col justify-between  h-full mt-4">
+      <div className="flex flex-col justify-between  h-full mt-16">
         <div
           className={`overflow-hidden  overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-600 `}
           style={{ height: "600px" }}

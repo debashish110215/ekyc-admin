@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Transition from "../Transition";
-// import Avatar from 'react-avatar';
+import Transition from "@/components/common/Transition";
 
 function UserMenu() {
   const [dropdownOpen, setDropdownOpen] = useState(false);

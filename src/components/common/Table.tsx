@@ -7,10 +7,6 @@ import {
 } from "react-table";
 import { BiSort } from "react-icons/bi";
 
-// export interface TableOptions<D extends Record<string, unknown>>
-//   extends UsePaginationOptions<D>,
-//     UseSortByOptions<D> {}
-
 interface TableProps {
   tableColumns: any[];
   tableData: any[];

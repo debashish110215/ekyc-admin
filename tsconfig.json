@@ -14,7 +14,20 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@/assets/*": ["./assets/*"], 
+      "@/components/*": ["./components/*"],
+      "@/helper/*": ["./helper/*"],
+      "@/hooks/*": ["./hooks/*"],
+      "@/layout/*": ["./layout/*"],
+      "@/pages/*": ["./pages/*"],
+      "@/routes/*": ["./routes/*"], 
+      "@/services/*": ["./services/*"], 
+      "@/store/*": ["./store/*"],
+      "@styles/*": ["./styles/*"],
+    },
   },
   "include": ["src", "postcss.config.js"],
   "references": [{ "path": "./tsconfig.node.json" }]

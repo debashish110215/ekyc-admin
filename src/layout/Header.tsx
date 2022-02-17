@@ -1,18 +1,17 @@
 import { FC } from "react";
-import { NavLink } from "react-router-dom";
-import Notifications from "../components/header/Notifications";
-import UserMenu from "../components/header/UserMenu";
-import LanguageMenu from "../components/header/LanguageMenu";
+import Notifications from "@/components/header/Notifications";
+import UserMenu from "@/components/header/UserMenu";
+import LanguageMenu from "@/components/header/LanguageMenu";
 import moment from "moment";
 import { AiOutlineUnorderedList } from "react-icons/ai";
-import { useAppSelector } from "../store/hooks";
+import { useAppSelector } from "@/store/hooks";
 
 interface HeaderProps {
   sidebarOpen: boolean;
   setSidebarOpen: (value: boolean) => void;
 }
 const Header: FC<HeaderProps> = ({ sidebarOpen, setSidebarOpen }) => {
-  const selectedPage = useAppSelector((state) => state.global.seletedPage);
+  const selectedPage = useAppSelector((state:any) => state.global.seletedPage);
   return (
     <header className="sticky top-0 bg-white  shadow z-30">
       <div className="px-4 sm:px-6 lg:px-8">

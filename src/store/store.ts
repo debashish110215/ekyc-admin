@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import globalReducer from "./global/globalReducer";
+import globalReducer from "@/store/global/globalReducer";
 
 export function makeStore() {
   return configureStore({

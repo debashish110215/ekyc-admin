@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Transition from "../Transition";
+import Transition from "@/components/common/Transition";
 import { IoMdNotificationsOutline } from "react-icons/io";
 
 function Notifications() {
